@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -30,7 +31,7 @@ public class 최단경로_1753 {
 		for (int i = 0; i < V + 1; i++) graph.add(new ArrayList<>());
 		// 거리 배열 초기화
 		distances = new int[V + 1];
-		for (int i = 1; i < V + 1; i++) distances[i] = Integer.MAX_VALUE;
+		Arrays.fill(distances, Integer.MAX_VALUE);
 		
 		for (int i = 0; i < E; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -48,7 +49,6 @@ public class 최단경로_1753 {
 		bw.write(sb.toString());
 		bw.close();
 		br.close();
-//		for (int i = 1; i < V + 1; i++) System.out.println(distances[i] == Integer.MAX_VALUE ? "INF" : distances[i]);
 	}
 
 	static void dijkstra() {
