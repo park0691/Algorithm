@@ -10,7 +10,7 @@ public class 오셀로게임_4615 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int T = 1;
+		int T = sc.nextInt();
 		for (int t = 1; t <= T; t++) {
 			N = sc.nextInt();
 			int m = sc.nextInt();
