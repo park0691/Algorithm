@@ -30,12 +30,12 @@ public class 스타트링크_5014 {
 			
 			int nextPos = data[0] + U;
 			int nextSec = data[1] + 1;
-			if (1 <= nextPos && nextPos <= G && !check[nextPos]) {
+			if (1 <= nextPos && nextPos <= N && !check[nextPos]) {
 				q.offer(new Integer[] { nextPos, nextSec });
 				check[nextPos] = true;
 			}
 			nextPos = data[0] - D;
-			if (1 <= nextPos && nextPos <= G && !check[nextPos]) {
+			if (1 <= nextPos && nextPos <= N && !check[nextPos]) {
 				q.offer(new Integer[] { nextPos, nextSec });
 				check[nextPos] = true;
 			}
@@ -47,5 +47,4 @@ public class 스타트링크_5014 {
 			System.out.println("use the stairs");
 		}
 	}
-
 }
