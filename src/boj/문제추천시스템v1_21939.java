@@ -13,7 +13,7 @@ import java.util.TreeSet;
  */
 public class 문제추천시스템v1_21939 {
 	static int N, P, L, M;
-	static TreeSet<Integer[]> ts = new TreeSet<>((a, b) -> a[1] == b[1] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
+	static TreeSet<Integer[]> ts = new TreeSet<>((a, b) -> a[1].equals(b[1]) ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
 	static Map<Integer, Integer> map = new HashMap<>();
 
 	public static void main(String[] args) throws Exception {
@@ -28,7 +28,7 @@ public class 문제추천시스템v1_21939 {
 			P = Integer.parseInt(st.nextToken());
 			L = Integer.parseInt(st.nextToken());
 			ts.add(new Integer[] { P, L });
-			map.put(P, L);	
+			map.put(P, L);
 		}
 		
 		M = Integer.parseInt(br.readLine());
