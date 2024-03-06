@@ -72,3 +72,4 @@
 | 이모티콘할인행사 | DFS, 완탐     | 2023 KAKAO |               |
 | 석유시추     | BFS         | PCCP 기출 2  |               |
 | 미로탈출명령어  | Greedy      | 2023 KAKAO | DFS로도...      |
+| 실패율      | 우선순위큐       | 2019 KAKAO | FLOAT 비교로직    |
